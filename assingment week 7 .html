@@ -1,0 +1,197 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tisan Switch World Theme</title>
+  <link rel="stylesheet" href="Assingment week 7\styles.css">
+</head>
+<body>
+  <!-- Theme class will be added by JavaScript -->
+  <div class="site-wrapper">
+    <!-- Header with Theme Toggle -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">
+            <span class="theme-icon">☀️</span>
+            ThemeSwitch
+          </a>
+          
+          <nav class="desktop-nav">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+              <span class="theme-icon-dark">🌙</span>
+              <span class="theme-icon-light">☀️</span>
+            </button>
+          </nav>
+          
+          <div class="mobile-controls">
+            <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme">
+              <span class="theme-icon-dark">🌙</span>
+              <span class="theme-icon-light">☀️</span>
+            </button>
+            <button id="mobile-menu-toggle" class="mobile-menu-button" aria-label="Toggle menu">
+              <span class="menu-icon">☰</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Mobile Navigation (hidden by default) -->
+        <nav id="mobile-nav" class="mobile-nav">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#testimonials" class="nav-link">Testimonials</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Beautiful Themes with <span class="accent">Smooth Animations</span></h1>
+          <p class="hero-description">Experience seamless theme switching with elegant animations and persistent settings using localStorage.Here is were u meet and blend with yourminds drsire of theme</p>
+          
+          <div class="button-group">
+            <button class="button primary interactive">Get Started</button>
+            <button class="button secondary interactive">Learn More</button>
+          </div>
+          
+          <div class="hero-image interactive">
+            <div class="hero-content">
+              <div class="hero-content-title">Your Content Here</div>
+              <p>This demo showcases smooth theme transitions and animations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Key Features</h2>
+            <p class="section-description">Discover what makes our theme switcher special with these powerful features</p>
+          </div>
+          
+          <div class="features-grid">
+            <!-- Feature cards would be repeated -->
+            <div class="feature-card interactive">
+              <div class="feature-icon">🎨</div>
+              <h3 class="feature-title">Smooth Transitions</h3>
+              <p class="feature-description">Experience seamless color transitions and animations when switching between themes.</p>
+            </div>
+            <!-- More feature cards... -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">What Our Users Say</h2>
+            <p class="section-description">People love our theme switching experience</p>
+          </div>
+          
+          <div class="testimonials-grid">
+            <!-- Testimonial cards would be repeated -->
+            <div class="testimonial-card interactive">
+              <div class="stars">★★★★</div>
+              <p class="quote">"The smooth animations and transitions make switching themes a delightful experience. I love how my preference is remembered!"</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">A</div>
+                <h4 class="author-name">AlEX MUNENE</h4>
+              </div>
+            </div>
+            <!-- More testimonial cards... -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section id="contact" class="cta">
+        <div class="container">
+          <h2 class="section-title">Ready to Get Started?</h2>
+          <p class="section-description">Join our newsletter to receive updates and tips about theme switching and animations.</p>
+          
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required class="email-input">
+            <button type="submit" class="button primary interactive">Subscribe</button>
+          </form>
+          
+          <p class="privacy-note">We'll also store your preference in localStorage, just like we do with your theme choice.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3 class="footer-title">ThemeSwitch</h3>
+            <p>Beautiful theme switching with smooth animations and localStorage persistence.</p>
+          </div>
+          
+          <!-- More footer columns... -->
+        </div>
+        
+        <div class="copyright">
+          <p>© 2023 ThemeSwitch. All rights reserved.By Tisan254 LTD</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Samurai Animation Container -->
+    <div id="samurai-container" class="samurai-container">
+      <!-- Samurai Character -->
+      <div class="samurai-character">
+        <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- SVG content for samurai character -->
+          <g class="samurai-body">
+            <!-- Head -->
+            <circle cx="75" cy="55" r="25" class="samurai-head"/>
+            
+            <!-- Helmet -->
+            <path d="M55 45C55 35 65 30 75 30C85 30 95 35 95 45" class="samurai-helmet"/>
+            <path d="M55 45C55 45 65 50 75 50C85 50 95 45 95 45" class="samurai-helmet-detail"/>
+            
+            <!-- Face -->
+            <path d="M65 55H85" class="samurai-face"/>
+            <circle cx="68" cy="48" r="2" class="samurai-eye"/>
+            <circle cx="82" cy="48" r="2" class="samurai-eye"/>
+            
+            <!-- Body -->
+            <path d="M60 80V100C60 110 90 110 90 100V80" class="samurai-body-part"/>
+            <path d="M60 80L75 70L90 80" class="samurai-body-part"/>
+            
+            <!-- Armor Details -->
+            <path d="M65 85H85" class="samurai-armor"/>
+            <path d="M65 92H85" class="samurai-armor"/>
+            
+            <!-- Sword -->
+            <path d="M100 40L130 10" class="samurai-sword"/>
+            <path d="M95 45L125 15" class="samurai-sword"/>
+            
+            <!-- Sword Handle -->
+            <rect x="90" y="45" width="10" height="5" transform="rotate(-45 90 45)" class="samurai-sword-handle"/>
+            
+            <!-- Sword Shine -->
+            <path d="M115 25L120 20" class="samurai-sword-shine"/>
+          </g>
+        </svg>
+      </div>
+      
+      <!-- Slash Effect -->
+      <div class="slash-effect"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
